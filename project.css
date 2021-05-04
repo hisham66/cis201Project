@@ -1,0 +1,69 @@
+	
+	
+	body {
+				background-color:#4d1919;
+			}
+			div {
+				  background-color: #662200;
+				  color: white;
+				  width: 450px;
+				  border: 1px ridge black;
+				  padding: 30px;
+				  padding-bottom: 350px;
+				  padding-top: 70px;
+				  margin: 15px;
+				  font-weight: 500;
+				  font-size: 23px;
+				  color: #e5e5e5;
+				  text-transform: uppercase;
+				  font-family: 'Open Sans', arial, helvetica, sans-serif;
+				  line-height: 30px;
+				  text-align: center;
+				  letter-spacing: 3px;
+				  word-wrap: break-word;
+				 }
+				 
+			span.s1 {
+					font-size: 19px;
+					font-family: georgia, arial, helvetica;
+					font-style: italic;
+					text-transform: none;
+					margin-top: 3px;
+					color: #e5e5e5;
+					font-weight: normal;
+					line-height: 30px;
+					}
+					
+			.s2 {
+				  position:absolute;
+					left:100px;
+					padding-top: 20px;
+					}
+					
+			.s3 {
+					font-size: 19px;
+					font-family: georgia, arial, helvetica;
+					font-style: italic;
+					text-transform: none;
+					margin-top: 3px;
+					color: #e5e5e5;
+					font-weight: normal;
+					line-height: 30px;
+			}
+			
+			 .s4 {
+				   position:absolute;
+					left:15px;
+					top:110px;
+					color: grey;
+					font-size: 17px;
+					} 
+					
+			span.Interface{
+			  position:absolute;
+			  left:480px;
+			  
+			   padding: 5px;
+			   margin: 10px;
+			 padding-left: 0px;
+			}

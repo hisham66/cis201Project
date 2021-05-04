@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>  calculator </title> 
+		<style>
+			
+			body{
+			background-color: lightsteelblue;
+			
+			}
+			
+			p {
+				border: 1px solid gray;
+				height: 30px;
+				width: 220px;
+				background-color: white;
+				margin: 10px;
+			}
+			table {
+				background-color: gray;
+			}
+			
+			button{
+				background-color: lightgray;
+				width: 10em;  
+				height: 3em;
+				font-size:15px;
+				}
+			.Cal{
+			width: 20em;  
+			}
+			
+		</style>
+		<script>
+			function printNumber(x){
+				document.getElementById('mathOper').innerHTML += x;
+			}
+			
+			function printOp(x){
+				document.getElementById('mathOper').innerHTML += x;
+			}
+			
+			function calculate(){
+				var mathString = document.getElementById('mathOper').textContent;
+				document.getElementById('result').innerHTML = eval(mathString);
+			
+			}
+			function refreshPage(){
+                window.location.reload();
+            } 
+		</script>
+	</head>
+	<body>
+	
+		<table>
+		    <tr>
+				<th colspan="4" style=" color: white; font-size: 20px;"> a simpe calculator </th>
+				
+			</tr>
+			<tr>
+				<th colspan="2" ><p id="mathOper"> </p> </th>
+				<th colspan="2" ><p id="result"> ... </p> </th>
+			</tr>
+			<tr>
+				<td> <button onclick="printNumber(1)"> 1 </button> </td>
+				<td> <button onclick="printNumber(2)"> 2 </button> </td>
+			    <td> <button onclick="printNumber(3)"> 3 </button> </td>
+				<td> <button style="  background-color: #008080;" onclick="printOp('+')"> + </button> </td>
+			</tr>
+			<tr>
+				<td> <button onclick="printNumber(4)"> 4 </button> </td>
+				<td> <button onclick="printNumber(5)"> 5 </button> </td>
+			    <td> <button onclick="printNumber(6)"> 6 </button> </td>
+				<td> <button style=" background-color: #008080;" onclick="printOp('-')"> - </button> </td>
+			</tr>
+			<tr>
+				<td> <button onclick="printNumber(7)"> 7 </button> </td>
+				<td> <button onclick="printNumber(8)"> 8 </button> </td>
+			    <td> <button onclick="printNumber(9)"> 9 </button> </td>
+				<td> <button style=" background-color: #008080;" onclick="printOp('*')"> x </button> </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td colspan="2"> <button onclick="printNumber(0)"> 0 </button> </td>
+				<td> <button style=" background-color: #008080;" onclick="printOp('/')"> / </button> </td>
+			</tr>
+			<tr>
+				<td> <button type="button" style=" background-color: #cc7a00;" onClick="refreshPage()">c</button> </td>
+				<td></td>
+				<td colspan="2"> <button class="Cal" style=" background-color: #cc7a00;" onclick="calculate()"> Calculate </button> </td>
+			</tr>
+			
+		</table>
+	</body>
+<html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<title>Hisham cafe</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+	
+	<link type="text/css" rel="stylesheet" href="project.css">
+	
+	<head>
+		<body>
+		<span class="Interface" >
+		<img  src="home.JPEG" class="img" id="Interface"  width="1400px" height="900px">
+		</span>
+		
+			<div >
+			 hisham cafe <br>
+			 <span class="s1"> best cafe ever </span>
+			 <br><br>
+			 
+			 <hr> 
+				<ul class="s2">
+					<li> <a href="#home" class="w3-bar-item w3-button" onclick="home(0)">home</a> </li>
+					<li> <a href="#menu" class="w3-bar-item w3-button" onclick="printUsingAlert()"> menu</a>
+						  
+					<span class="s3" >
+					 
+						<ul> 
+						
+						<li> <a href='#h-drinks' class='w3-bar-item w3-button'onclick="home(1)" >hot drinks</a> </li>
+						<li><a href='#c-drinks' class='w3-bar-item w3-button'onclick="home(2)">cold drinks</a></li>
+						<li><a href='#sandwiches' class='w3-bar-item w3-button' onclick="home(3)">sandwiches</a></li>
+						<li><a href='#salads' class='w3-bar-item w3-button' onclick="home(4)">salads</a></li>
+						<li><a href='#Desserts' class='w3-bar-item w3-button' onclick="home(5)">Desserts</a></li>
+						</ul>
+					<span>
+					 </li>
+					<li> <a href="contact_us_project.html" class="w3-bar-item w3-button"  >contact us</a> </li>
+					
+				</ul> 
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<hr>		
+	
+			</div>
+			
+			<script>
+			
+			 function printUsingAlert(){
+				alert("click on each menu element to see it");
+				
+			}
+			function home(value){
+				var pic;
+					if (value == 0)
+					{
+					pic="home.JPEG";
+					}
+					if (value == 1)
+					{
+					pic="hot drinks.JPG";
+					}
+					if (value == 2)
+					{
+					pic="cold drinks.jpeg";
+					}
+					if (value == 3)
+					{
+					pic="sandwiches.jpeg";
+					}
+					if (value == 4)
+					{
+					pic="salads.jpeg";
+					}
+					if (value == 5)
+					{
+					pic="Desserts.jpeg";
+					}
+					else
+					{ 
+					
+					}
+				    document.getElementById('Interface').src=pic;
+			}
+		
+			</script>
+
+		</body>
+	</head>
+</html>
